@@ -67,36 +67,3 @@ export class App extends Component {
     );
   }
 }
-
-// import React, { Component } from 'react';
-
-// export class App extends Component {
-//   render() {
-// return (
-//     <div className={css.app_holder}>
-//       <Section title="Please leave feedback">
-//         <FeedbackOptions
-//           options={options}
-//           onLeaveFeedback={[
-//             this.handlAddGood,
-//             this.handlAddNeutral,
-//             this.handlAddBad,
-//           ]}
-//         />
-//         <h1 className={css.app_stattitle}>Statistics</h1>
-//         {this.countTotalFeedback() === 0 ? (
-//           <Notification message="There is no feedback" />
-//         ) : (
-//           <Statistics
-//             good={this.state.good}
-//             neutral={this.state.neutral}
-//             bad={this.state.bad}
-//             total={this.countTotalFeedback()}
-//             positivePercentage={this.countPositiveFeedbackPercentage()}
-//           />
-//         )}
-//       </Section>
-//     </div>
-// )
-//   }
-// }
