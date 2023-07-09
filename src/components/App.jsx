@@ -12,9 +12,9 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleAddToState = name => {
+  handleAddToState = state => {
     this.setState(prevState => ({
-      [name]: prevState[name] + 1,
+      [state]: prevState[state] + 1,
     }));
   };
 

@@ -8,21 +8,21 @@ export class FeedbackOptions extends Component {
     onClick: PropTypes.func,
   };
 
-  handleClick = e => {
-    const name = e.target.textContent.toLowerCase();
+  handlClick = evt => {
+    const name = evt.target.textContent.toLowerCase();
     this.props.onLeaveFeedback(name);
   };
 
   render() {
     return (
       <div className={css.container}>
-        <button className={css.btn} onClick={this.handleClick}>
+        <button className={css.btn} onClick={this.handlClick}>
           Good
         </button>
-        <button className={css.btn} onClick={this.handleClick}>
+        <button className={css.btn} onClick={this.handlClick}>
           Neutral
         </button>
-        <button className={css.btn} onClick={this.handleClick}>
+        <button className={css.btn} onClick={this.handlClick}>
           Bad
         </button>
       </div>
